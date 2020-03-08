@@ -9,17 +9,18 @@ ARM 프로세서에서 동작하는 Linux 에서 실행할 C/C++ 프로그램을
 사용 Shell : msys
 ```bash
 # 툴체인 다운로드
-$ wget https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
+wget https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
 
 # 압축 풀기
-$ tar -xvf gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
+tar -xvf gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
 
 # 툴체인 디렉터리 이동
-$ mv gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf /mingw64
+mv gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf /mingw64
 
 # 해당 툴체인 환경변수에 추가
-$ echo -e '\nexport PATH="/mingw64/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf/bin:$PATH"' >> ~/.bashrc
-$ source ~/.bashrc
+echo -e '\nexport PATH="/mingw64/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf/bin:$PATH"' >> ~/.bashrc
+
+source ~/.bashrc
 ```
 
 ### macOS
@@ -40,6 +41,7 @@ mv arm-unknown-linux-gnueabi /usr/local
 
 # 해당 툴체인 환경변수에 추가
 echo -e '\nexport PATH=/usr/local/arm-unknown-linux-gnueabi/bin:$PATH' >> ~/.zshrc
+
 source ~/.zshrc
 ```
 
