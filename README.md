@@ -24,7 +24,7 @@ echo -e '\nexport PATH="/mingw64/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-lin
 source ~/.bashrc
 ```
 
-### CMake 셋팅
+### CMake 셋팅 [검증 필요]
 CMakeLists.txt
 ```cmake
 set(CMAKE_C_COMPILER arm-none-linux-gnueabi-gcc)
@@ -73,7 +73,7 @@ set(CMAKE_C_LINK_FLAGS "")
 set(CMAKE_CXX_LINK_FLAGS "")
 ```
 
-### Ubuntu
+## Ubuntu
 ### 툴체인 셋팅
 다운로드 : apt-get   
 
